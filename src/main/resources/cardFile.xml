@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+    <sys-header>
+        <data name="SYS_HEAD">
+            <struct>
+                <data name="SERVICE_CODE">
+                    <field length="30" type="string">SVR_CARD</field>
+                </data>
+                <data name="TRAN_MODE">
+                    <field length="10" type="string">ONLINE</field>
+                </data>
+                <data name="SOURCE_TYPE">
+                    <field length="2" type="string">UC</field>
+                </data>
+                <data name="BRANCH_ID">
+                    <field length="6" type="string">027001</field>
+                </data>
+                <data name="USER_ID">
+                    <field length="30" type="string">EC0001</field>
+                </data>
+                <data name="TRAN_DATE">
+                    <field length="8" type="string">20210917</field>
+                </data>
+                <data name="TRAN_TIMESTAMP">
+                    <field length="9" type="string">102648</field>
+                </data>
+                <data name="SERVER_ID">
+                    <field length="30" type="string">127.0.0.1</field>
+                </data>
+                <data name="USER_LANG">
+                    <field length="20" type="string">CHINESE</field>
+                </data>
+                <data name="SEQ_NO">
+                    <field length="50" type="string">ECI2021091700071683</field>
+                </data>
+                <data name="AUTH_FLAG">
+                    <field length="1" type="string">M</field>
+                </data>
+                <data name="SOURCE_BRANCH_NO">
+                    <field length="10" type="string">cups.gaps.zpk</field>
+                </data>
+                <data name="MODULE_ID">
+                    <field length="2" type="string">RB</field>
+                </data>
+                <data name="MESSAGE_TYPE">
+                    <field length="4" type="string">1200</field>
+                </data>
+                <data name="MESSAGE_CODE">
+                    <field length="6" type="string">6077</field>
+                </data>
+            </struct>
+        </data>
+    </sys-header>
+    <body>
+        <data name="CARD_NO">
+            <field type="string" length="19" scale="0">6236430910100000052</field>
+        </data>
+        <data name="CHECK_OPTION">
+            <field type="string" length="4" scale="0">00110</field>
+        </data>
+        <data name="TRACK2">
+            <field type="string" length="37" scale="0">30122200000000661F</field>
+        </data>
+        <data name="CCY">
+            <field type="string" length="3" scale="0">CNY</field>
+        </data>
+        <data name="CHANNEL">
+            <field type="string" length="2" scale="0">11</field>
+        </data>
+        <data name="CUP_DATE">
+            <field type="string" length="8" scale="0">20211121</field>
+        </data>
+        <data name="CUP_AREA_CODE">
+            <field type="string" length="8" scale="0">92010000</field>
+        </data>
+        <data name="MERCH_NO">
+            <field type="string" length="15" scale="0">123456789012345</field>
+        </data>
+        <data name="ADDTNL_DATA_PRIVATE">
+            <field type="string" length="512" scale="0">ASAO00215</field>
+        </data>
+        <data name="RESERVED">
+            <field type="string" length="100" scale="0">000006000600000000004012000</field>
+        </data>
+        <data name="INTEGRATE_OPTION">
+            <field type="string" length="20" scale="0">1000</field>
+        </data>
+        <data name="TRAN_AMT"><field type="string" length="20" scale="0">1000</field></data>
+
+    </body>
+</service>
