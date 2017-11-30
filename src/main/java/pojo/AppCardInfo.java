@@ -20,7 +20,7 @@ public class AppCardInfo {
 
     private String merchNo;
 
-    private String tranAmt;
+    private Double tranAmt;
 
     public String getRetCode() {
         return retCode;
@@ -136,11 +136,11 @@ public class AppCardInfo {
         this.retMsg = retMsg;
     }
 
-    public String getTranAmt() {
+    public Double getTranAmt() {
         return tranAmt;
     }
 
-    public void setTranAmt(String tranAmt) {
+    public void setTranAmt(Double tranAmt) {
         this.tranAmt = tranAmt;
     }
 
