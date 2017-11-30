@@ -1,0 +1,12 @@
+import pojo.AppCardInfo
+
+rule "Hello World"
+    when
+       //LHS块
+       //在working Memory中，AppCardInfo对象，如果刷卡金额大于1000就进行预警
+        a : AppCardInfo(tranAmt>1000)
+    then
+
+
+
+end
