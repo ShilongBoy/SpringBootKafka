@@ -105,7 +105,7 @@ public class ParseXML {
                         appCardInfo.setIntegrateOption(value);
                     } else if (tmpBodyData.getName().equals("TRAN_AMT")) {
                         String value = tmpBodyData.getField().getValue();
-                        appCardInfo.setTranAmt(value);
+                        appCardInfo.setTranAmt(Double.valueOf(value));
                     }
 
                 }
