@@ -1,0 +1,24 @@
+import drools.DroolsTester.Message;
+
+rule "Hello World"
+    when
+       //LHS块
+       //在working Memory中，如果存在一个Message对象满足他的status属性等于Message.HELLO条件，
+       //就把满足条件的Message实例用变量m表示，他的message属性用myMessage表示，以便在RHS中使用。
+        m : Message( status == Message.HELLO, myMessage : message )
+    then
+       //RHS块
+       //在LHS中满足条件就运行RHS块。用到了LHS中的变量m，myMessage
+        System.out.println( myMessage );
+        m.setMessage( "Goodbye cruel world" );
+        m.setStatus( Message.GOODBYE );
+        update( m );//表示把此Message实例在 working memory中更新.这便会触发名称为"GoodBye"的rule,
+end
+
+rule "GoodBye"
+    when
+        m:Message( status == Message.GOODBYE, myMessage : message )
+    then
+        System.out.println( myMessage );
+        m.setMessage("this is message from drool");
+end
